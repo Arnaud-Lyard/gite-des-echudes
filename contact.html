@@ -11,13 +11,15 @@ session_start();
     <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <!-- CSS only -->
+  <title> Prise de contact avec le gite - Gite des Echudes</title>
+  <meta name="description" content="Prise de contact, réservation pour séjour, week-end, mariages..."/>
     <head>
   </head>
   <body>
     <header>
       <div class="menuNav">
-          <a title="Accueil" href="./index.html"><img class="menuNav--img" src="img/logo/gite-des-echudes.png" alt="logo du Gite des Echudes" ></a>
-          <a href="index.html"><div class="menuNav--link menuNav--link_normal">Accueil</div></a>
+          <a title="Accueil" href="/"><img class="menuNav--img" src="img/logo/gite-des-echudes.png" alt="logo du Gite des Echudes" ></a>
+          <a href="/"><div class="menuNav--link menuNav--link_normal">Accueil</div></a>
           <a href="descriptif.html"><div class="menuNav--link menuNav--link_normal">Descriptif</div></a>
           <a href="situation.html"><div class="menuNav--link menuNav--link_normal">Situation</div></a>
           <a href="tarifs.html"><div class="menuNav--link menuNav--link_normal">Tarifs</div></a>
@@ -34,33 +36,56 @@ session_start();
                   <div class="row">
                     <div class="contact--box_text">
                       <div class="row">
-                        <div class="col12 col-md-6">
-                          <label class="contact--box_label contact--box_labelwhite" for="name">Votre nom : </label>
-                          <input name="name" type="text" id="name" placeholder="Votre nom" class="form-control" value="">
-                        </div>
-                        <div class="col12 col-md-6">
-                          <label class="contact--box_label contact--box_labelwhite" for="forname">Votre Prénom : </label>
-                          <input name="forname" type="text" id="forname" placeholder="Votre prénom" class="form-control" value="">
-                        </div>
+                        <div class="col12 col-md-2">
+                          <div class="prestation--image">
+                          <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></svg>
+                          </div>
                       </div>
-                        <div class="col12 col-md-12">
-                          <label class="contact--box_label contact--box_labelwhite" for="email">Votre email : </label>
-                          <input type="email" id="email" name="email" placeholder="Saisir votre email" pattern = (\w\.?)+@[\w\.-]+\.\w{2,} required class="form-control" value="">
+                      <div class="col12 col-md-10">
+                          <div class="prestation--title">
+                              <h4>Téléphone</h4>
+                          </div>
+                          <div class="prestation--text">
+                              <p>06 72 70 19 56</p>
+                          </div>
+                      </div>  
+                      <div class="col12 col-md-2">
+                        <div class="prestation--image">
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
                         </div>
-                        <div class="col12 col-md-12">
-                          <label class="contact--box_label contact--box_labelwhite" for="subject">Objet de votre demande : </label>
-                          <input type="text" id="subject" name="subject" placeholder="Saisir un objet" required class="form-control" value="">
+                    </div>
+                    <div class="col12 col-md-10">
+                        <div class="prestation--title">
+                            <h4>Localisation</h4>
                         </div>
-                        <div class="col12 col-md-12">
-                          <label class="contact--box_label contact--box_labelwhite" for="message">Votre commentaire : </label>
-                          <textarea name="message" rows="10" cols="30" id="message" placeholder="Saisir votre demande" class="form-control" ></textarea><br>
-                          <input type="submit" name="formulaire" value="Envoyer" required class="btn btn-warning">
+                        <div class="prestation--text">
+                            <p>Saint Etienne sur Chalaronne</p>
                         </div>
+                    </div>  
+                    <div class="col12 col-md-2">
+                      <div class="prestation--image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                          <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                        </svg>
+                                          </div>
+                  </div>
+                  <div class="col12 col-md-10">
+                      <div class="prestation--title">
+                          <h4>Disponibilité</h4>
+                      </div>
+                      <div class="prestation--text">
+                          <p>Nous contacter</p>
+                      </div>
+                  </div>  
+
+
+                      </div>
                     </div>           
                   </div>
                 </div>
                 <div class="col12 col-md-6 contact--box_image">
-                  <img src="img/contact.png">
+                  <img src="img/telephone.jpg" alt="Téléphone du gite">
                 </div>
               </div>
             </div>
@@ -68,14 +93,14 @@ session_start();
         </div>
       </form>
       <footer>
-            <div class="information">
+            <div class="information mt-5">
                 <div class="information--obligatory">
                     <a href="./mentions-legales.html">Mentions légales </a>|
                     <a href="./polithique-de-confidentialite.html">Politique de confidentialité</a>
                 </div>
                 <div class="information--conception">
                     <div class="information--conception_image">
-                        <a href="https://www.Prochainweb.com" target="_blank"><img src="img/Prochainweb.png"></a>
+                        <a href="https://www.Prochainweb.com" target="_blank"><img src="img/Prochainweb.png" alt="Conception d'application web"></a>
                     </div>
                     <div class="information--conception_text">
                         <p>Création de site web et services informatiques à domicile.</p>
@@ -85,7 +110,6 @@ session_start();
         </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-    <script src="js/script.js"></script>
   </body>
 </html>
 
