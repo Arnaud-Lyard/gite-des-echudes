@@ -542,6 +542,10 @@ body{
 .tarif--reservation a:hover{
     color: #af4600;
 }
+.tarifs--prix__paragraphe{
+    padding: 10px;
+    text-align: center;
+}
 /*Spécificité */
 
 .specificite{
