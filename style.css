@@ -1,885 +1,916 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #E0D3B6 !important;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0d3b6 !important;
 }
 /*menuNav*/
-.menuNav{
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f8efdb;
+.nav-link {
+  color: #666777;
+  font-weight: 400;
 }
-.menuNav--link{
-    color:#796d54;
-    padding: 30px 32px;
-    font-size: 24px;
-    display: flex;
+
+.nav-item .active {
+  color: #af4600 !important;
 }
-.menuNav--img{
-    height: 60px;
-    float: left;
-    margin-right: 100px;
-    margin-top: 15px;
+
+.nav-link:hover {
+  color: #aa6132 !important;
 }
-.menuNav a{
-    text-decoration: none;
+
+.navbar-custom {
+  background-color: #f8efdb;
 }
-.menuNav--link_activ{
-    background-color: #bbad90;
-    border-radius: 10px;
+.menuNav {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8efdb;
 }
-.menuNav--link_activ:hover{
-    color: #af4600;
+.menuNav--link {
+  color: #796d54;
+  padding: 30px 32px;
+  font-size: 24px;
+  display: flex;
 }
-.menuNav--link_normal:hover{
-    color: #af4600;
+.menuNav--img {
+  height: 60px;
+  float: left;
+  margin-right: 100px;
+  margin-top: 15px;
 }
-@media (max-width:1245px){
-    .menuNav--img{
-        display: none;
-    }
+.menuNav a {
+  text-decoration: none;
 }
-@media (max-width:1089px){
-    .menuNav{
-        height: 50px;
-    }
-    .menuNav--link{
-        padding: 10px 4px;
-        font-size: 16px;
-    }
+.menuNav--link_activ {
+  background-color: #bbad90;
+  border-radius: 10px;
 }
-@media (max-width:550px){
-    .menuNav{
-        height: 40px;
-    }
-    .menuNav--link{
-        font-size: 11px;
-    }
+.menuNav--link_activ:hover {
+  color: #af4600;
+}
+.menuNav--link_normal:hover {
+  color: #af4600;
+}
+
+@media (max-width: 1089px) {
+  .menuNav {
+    height: 50px;
+  }
+  .menuNav--link {
+    padding: 10px 4px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 550px) {
+  .menuNav {
+    height: 40px;
+  }
+  .menuNav--link {
+    font-size: 11px;
+  }
 }
 /* Banniere */
-.sectionBanniere{
-    width: 100%;
-    height: 700px;
-    background-image: url(img/banniere-gite-des-echudes.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    color: #f8efdb;
+.sectionBanniere {
+  width: 100%;
+  height: 700px;
+  background-image: url(img/banniere-gite-des-echudes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #f8efdb;
 }
-.sectionBanniere--title{
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    text-align: center;
+.sectionBanniere--title {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
 }
-@media (max-width:550px){
-    .sectionBanniere{
-        display: none;
-    }
+@media (max-width: 550px) {
+  .sectionBanniere {
+    display: none;
+  }
 }
 /* service */
-.sectionService{
-    padding: 50px 0;
+.sectionService {
+  padding: 50px 0;
 }
-.sectionService--image img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border: 3px solid white;
-    border-radius: 10px;
+.sectionService--image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border: 3px solid white;
+  border-radius: 10px;
 }
-.sectionService--position{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    color: #796d54;
+.sectionService--position {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  color: #796d54;
 }
-.sectionService--text_paragraphe{
-    font-size:20px;
-    text-align: justify;
+.sectionService--text_paragraphe {
+  font-size: 20px;
+  text-align: justify;
 }
-.sectionService--text_paragraphe a{
-    text-decoration: none;
-    color: #af4600;
+.sectionService--text_paragraphe a {
+  text-decoration: none;
+  color: #af4600;
 }
-.sectionService--text_paragraphe a:hover{
-    color: #ec5e00;
+.sectionService--text_paragraphe a:hover {
+  color: #ec5e00;
 }
-@media (max-width:767px){
-    .sectionService--image img{
-        height: 200px;
-    }
+@media (max-width: 767px) {
+  .sectionService--image img {
+    height: 200px;
+  }
 }
 /* Propriété */
-.sectionProperty{
-    width: 100%;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #bba983;
+.sectionProperty {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #bba983;
 }
-.sectionProperty--image img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
+.sectionProperty--image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
 }
-.sectionProperty--title{
-    color: #6d5b33;
+.sectionProperty--title {
+  color: #6d5b33;
 }
-.sectionProperty--text{
-    color: #53462b;
-    font-size: 20px;
+.sectionProperty--text {
+  color: #53462b;
+  font-size: 20px;
 }
 
 /* Découverte */
-.sectionDiscovery{
-    padding: 50px 0;
+.sectionDiscovery {
+  padding: 50px 0;
 }
-.sectionDiscovery--image img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border: 3px solid white;
-    border-radius: 10px;
+.sectionDiscovery--image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border: 3px solid white;
+  border-radius: 10px;
 }
-.sectionDiscovery--title{
-    text-align: center;
-    color:#796d54;
+.sectionDiscovery--title {
+  text-align: center;
+  color: #796d54;
 }
-.sectionDiscovery--image{
-    display: flex;
-    align-items: center;
-    height: 100%;
+.sectionDiscovery--image {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
-.sectionDiscovery--text{
-    text-align: justify;
-    color:#796d54;
-    font-size: 20px;
+.sectionDiscovery--text {
+  text-align: justify;
+  color: #796d54;
+  font-size: 20px;
 }
-@media (max-width:767px){
-    .sectionDiscovery--image img{
-        height: 200px;
-    }
+@media (max-width: 767px) {
+  .sectionDiscovery--image img {
+    height: 200px;
+  }
 }
 /*Proximité */
 
-.sectionProximity{
-    background-color: #bba983;
-    padding: 50px 0;
+.sectionProximity {
+  background-color: #bba983;
+  padding: 50px 0;
 }
-.sectionProximity--title{
-    text-align: center;
-    color: #6d5b33;
+.sectionProximity--title {
+  text-align: center;
+  color: #6d5b33;
 }
-.sectionProximity--text{
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    color:#53462b;
+.sectionProximity--text {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  color: #53462b;
+  width: 100%;
+  font-size: 20px;
+}
+.sectionProximity--text p {
+  width: 50%;
+}
+.sectionProximity--image img {
+  width: 50%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+.sectionProximity--image {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .sectionProximity--image img {
     width: 100%;
-    font-size: 20px;
-}
-.sectionProximity--text p{
-    width: 50%;
-}
-.sectionProximity--image img{
-    width: 50%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 3px solid white; 
-}
-.sectionProximity--image{
-    display: flex;
-    justify-content: center;
-}
-@media (max-width:767px){
-    .sectionProximity--image img{
-        width: 100%;
-        height: 200px;
-    }
-    .sectionProximity--text p{
-        width: 100%;
-    }
+    height: 200px;
+  }
+  .sectionProximity--text p {
+    width: 100%;
+  }
 }
 
 /* informations */
 
-.information{
-    padding: 20px 0;
-    width:100%;
-    font-size: 18px;
-    text-align: center;
-    background-color: #eee3cf;
+.information {
+  padding: 20px 0;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  background-color: #eee3cf;
 }
-.information--obligatory a{
-    text-decoration: none;
-    color: #53462b;
+.information--obligatory a {
+  text-decoration: none;
+  color: #53462b;
 }
-.information--obligatory a:hover{
-    color: #af4600;
+.information--obligatory a:hover {
+  color: #af4600;
 }
-.information--conception_image img{
-    width: auto;
-    height: 50px;
+.information--conception_image img {
+  width: auto;
+  height: 50px;
 }
-.information--conception_text{
-    color: #53462b;
+.information--conception_text {
+  color: #53462b;
 }
 
 /* Descriptif */
 
 /* Banniere */
-.sectionBanniereDescriptif{
-    width: 100%;
-    height: 700px;
-    background-image: url(img/cour-gite-des-echudes.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    color: #f8efdb;
+.sectionBanniereDescriptif {
+  width: 100%;
+  height: 700px;
+  background-image: url(img/cour-gite-des-echudes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #f8efdb;
 }
-@media (max-width:550px){
-    .sectionBanniereDescriptif{
-        display: none;
-    }
+@media (max-width: 550px) {
+  .sectionBanniereDescriptif {
+    display: none;
+  }
 }
-.sectionBanniereDescriptif--title{
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    text-align: center;
+.sectionBanniereDescriptif--title {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
 }
 
 /* Espace */
-.sectionEspace{
-    padding: 50px 0;
-    background-color: #fffaf0;
+.sectionEspace {
+  padding: 50px 0;
+  background-color: #fffaf0;
 }
-.sectionEspace--position{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    color: #796d54;
+.sectionEspace--position {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  color: #796d54;
 }
-.sectionEspace--image img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border: 3px solid white;
-    border-radius: 10px;
+.sectionEspace--image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border: 3px solid white;
+  border-radius: 10px;
 }
-.sectionEspace--text{
-    font-size: 18px;
+.sectionEspace--text {
+  font-size: 18px;
 }
-.sectionEspace--text a{
-    text-decoration: none;
-    color: #af4600;
+.sectionEspace--text a {
+  text-decoration: none;
+  color: #af4600;
 }
-.sectionEspace--text a:hover{
-    color: #ec5e00;
+.sectionEspace--text a:hover {
+  color: #ec5e00;
 }
 /* séparation */
-.separation{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/Musique-accordeon-saint-etienne-sur-chalaronne.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    height: 500px;
-    width: 100%;
+.separation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(img/Musique-accordeon-saint-etienne-sur-chalaronne.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
 }
-.separation--title{
-    text-align: center;
-    color: #f8efdb;
+.separation--title {
+  text-align: center;
+  color: #f8efdb;
 }
-.separation--text{
-    text-align: center;
-    color: #f8efdb;
-    padding: 0 200px;
+.separation--text {
+  text-align: center;
+  color: #f8efdb;
+  padding: 0 200px;
 }
-.separation--text a{
-    text-decoration: none;
-    color: #af4600;
+.separation--text a {
+  text-decoration: none;
+  color: #af4600;
 }
-.separation--text a:hover{
-    text-decoration: none;
-    color: #ec5e00;
+.separation--text a:hover {
+  text-decoration: none;
+  color: #ec5e00;
 }
-@media (max-width:767px){
-    .separation--text{
-        padding: 0;
-    }
+@media (max-width: 767px) {
+  .separation--text {
+    padding: 0;
+  }
 }
 /* separation */
 
-.descriptif--separation--image img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+.descriptif--separation--image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 /* loisir */
-.loisir{
-    background-color: #fffaf0;
-    padding-bottom: 50px;
+.loisir {
+  background-color: #fffaf0;
+  padding-bottom: 50px;
 }
-.loisir--image img{
-    width:100%;
-    height: 200px;
-    object-fit: contain;
-    margin-top: 50px;
+.loisir--image img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-top: 50px;
 }
-.loisir-text_position{
-    display: flex;
-    flex-direction: column;
-    height:100%;
-    justify-content: center;
+.loisir-text_position {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
 }
-.loisir--title{
-    color: #796d54;
-    text-align: center;
+.loisir--title {
+  color: #796d54;
+  text-align: center;
 }
-.loisir--text{
-    color: #796d54;
-    font-size: 20px;
-    text-align: justify;
+.loisir--text {
+  color: #796d54;
+  font-size: 20px;
+  text-align: justify;
 }
-.loisir--text a{
-    text-decoration: none;
-    color: #af4600;
+.loisir--text a {
+  text-decoration: none;
+  color: #af4600;
 }
-.loisir--text a:hover{
-    text-decoration: none;
-    color: #ec5e00;
+.loisir--text a:hover {
+  text-decoration: none;
+  color: #ec5e00;
 }
-@media(max-width:767px){
-    .loisir--image img{
-        width: 100%;
-        object-fit: cover;
-    }
-}
-.sectionBanniereSituation{
+@media (max-width: 767px) {
+  .loisir--image img {
     width: 100%;
-    height: 700px;
-    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/Gite-des-echudes.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #f8efdb;
+    object-fit: cover;
+  }
 }
-.sectionBanniereSituation--position{
-    width:50%;
-    
+.sectionBanniereSituation {
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(img/Gite-des-echudes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f8efdb;
 }
-.sectionBanniereSituation--title{
-    color: #f8efdb;
-    text-align: center;
+.sectionBanniereSituation--position {
+  width: 50%;
 }
-.sectionBanniereSituation--text{
-    font-size:20px;
-    color: #f8efdb;
-    text-align: justify;
+.sectionBanniereSituation--title {
+  color: #f8efdb;
+  text-align: center;
 }
-@media (max-width:767px){
-    .sectionBanniereSituation{
-        display: none;
-    }
+.sectionBanniereSituation--text {
+  font-size: 20px;
+  color: #f8efdb;
+  text-align: justify;
+}
+@media (max-width: 767px) {
+  .sectionBanniereSituation {
+    display: none;
+  }
 }
 /* Situation */
-.situation{
-    background-color: #fff;
-    height: 500px;
-    display: flex;
-    align-items: center;
+.situation {
+  background-color: #fff;
+  height: 500px;
+  display: flex;
+  align-items: center;
 }
-.situation--image img{
-    width: 100%;
-    height: 400px;
-    object-fit: contain;
+.situation--image img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
 }
-.situation--text{
-    text-align: justify;
-    font-size: 18px;
-    color: #796d54;
+.situation--text {
+  text-align: justify;
+  font-size: 18px;
+  color: #796d54;
 }
-.situation--title{
-    color: #796d54;
-    text-align: center;
+.situation--title {
+  color: #796d54;
+  text-align: center;
 }
-.situation--position{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+.situation--position {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
-.situation--call{
-    font-weight: bold;
-    color: #af4600;
+.situation--call {
+  font-weight: bold;
+  color: #af4600;
 }
-@media(max-width:767px){
-    .situation{
-        height:auto;
-    }
-}/* Tarifs services */
+@media (max-width: 767px) {
+  .situation {
+    height: auto;
+  }
+} /* Tarifs services */
 /*prestation*/
-.sectionBannieretarifs-prestation{
-    width: 100%;
-    height: 700px;
-    background-image: url(img/terrasse-gite.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    color: #f8efdb;
+.sectionBannieretarifs-prestation {
+  width: 100%;
+  height: 700px;
+  background-image: url(img/terrasse-gite.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #f8efdb;
 }
-@media (max-width:767px){
-    .sectionBannieretarifs-prestation{
-        display: none;
-    }
+@media (max-width: 767px) {
+  .sectionBannieretarifs-prestation {
+    display: none;
+  }
 }
-.prestation{
-    padding: 50px 0;
-    background-color: #f8efdb;
+.prestation {
+  padding: 50px 0;
+  background-color: #f8efdb;
 }
-.sectionBannieretarifs-prestation--title{
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    text-align: center;
+.sectionBannieretarifs-prestation--title {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
 }
-.prestation--title{
-    color: #796d54;
+.prestation--title {
+  color: #796d54;
 }
-.prestation--image{
-    width: 50px;
-    height: 50px;
-    fill: #af4600;
+.prestation--image {
+  width: 50px;
+  height: 50px;
+  fill: #af4600;
 }
-.prestation--text{
-    color: #796d54;
-    font-size: 18px;
+.prestation--text {
+  color: #796d54;
+  font-size: 18px;
+}
+.prestation--text a {
+  text-decoration: none;
+  color: #af4600;
+}
+.prestation--text a:hover {
+  color: #ec5e00;
 }
 /*tarifs*/
-.tarifs{
-    margin-top: 50px;
+.tarifs {
+  margin-top: 50px;
 }
-.tarifs--couleur{
-    background-color: #f8efdb;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 25px;
-    color: #333;
-    padding: 80px 0;
-    border: 1px solid #af4600;
+.tarifs--couleur {
+  background-color: #f8efdb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  color: #333;
+  padding: 80px 0;
+  border: 1px solid #af4600;
 }
-.tarifs--personne{
-    font-style: italic;
-    font-size: 18px;
+.tarifs--personne {
+  font-style: italic;
+  font-size: 18px;
 }
-.tarifs--option{
-    display: flex;
+.tarifs--option {
+  display: flex;
 }
-.tarifs--prix{
-    font-size: 30px;
-    font-weight:600;
+.tarifs--prix {
+  font-size: 30px;
+  font-weight: 600;
 }
-.tarifs--option p{
-    padding-left: 10px;
+.tarifs--option p {
+  padding-left: 10px;
 }
-.tarifs--enfant{
-    display: flex;
+.tarifs--enfant {
+  display: flex;
 }
-.tarifs--enfant p{
-    padding-left: 10px;
+.tarifs--enfant p {
+  padding-left: 10px;
 }
-.tarifs--image{
-    width:15px;
-    height: 15px;
-    fill: #333;
+.tarifs--image {
+  width: 15px;
+  height: 15px;
+  fill: #333;
 }
-.tarif--reservation{
-    background-color: #333;
-    border: 1px solid #af4600;
-    border-radius: 20px;
+.tarif--reservation {
+  background-color: #333;
+  border: 1px solid #af4600;
+  border-radius: 20px;
 }
-.tarif--reservation:hover{
-    background-color: #bba983;
-    border: 1px solid #af4600;
+.tarif--reservation:hover {
+  background-color: #bba983;
+  border: 1px solid #af4600;
 }
-.tarif--reservation a{
-    font-size: 25px;
-    color: #f8efdb;
-    text-decoration: none;
-    padding: 30px;
+.tarif--reservation a {
+  font-size: 25px;
+  color: #f8efdb;
+  text-decoration: none;
+  padding: 30px;
 }
-.tarif--reservation a:hover{
-    color: #af4600;
+.tarif--reservation a:hover {
+  color: #af4600;
 }
-.tarifs--prix__paragraphe{
-    padding: 10px;
-    text-align: center;
+.tarifs--prix__paragraphe {
+  padding: 10px;
+  text-align: center;
 }
 /*Spécificité */
 
-.specificite{
-    background-color: #f8efdb;
+.specificite {
+  background-color: #f8efdb;
 }
-.specificite--appel{
-    display: flex;
+.specificite--appel {
+  display: flex;
 }
-.specificite--animaux{
-    display: flex;
+.specificite--animaux {
+  display: flex;
 }
-.specificite--image_animaux{
-    fill: red;
-    width: 40px;
+.specificite--image_animaux {
+  fill: red;
+  width: 40px;
 }
-.specificite--image_appel{
-    fill: #333;
-    width: 40px;
+.specificite--image_appel {
+  fill: #333;
+  width: 40px;
 }
-.specificite--appel{
-    color: #796d54;
-    font-size: 20px;
+.specificite--appel {
+  color: #796d54;
+  font-size: 20px;
 }
-.specificite--animaux{
-    color: #796d54;
-    font-size: 20px;
+.specificite--animaux {
+  color: #796d54;
+  font-size: 20px;
 }
-.specificite{
-    margin-top: 50px;
+.specificite {
+  margin-top: 50px;
 }
 /*A visiter */
 /* Banniere */
-.sectionBannierevisites{
-    width: 100%;
-    height: 700px;
-    background-image: url(img/le-beaujolais.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    color: #f8efdb;
+.sectionBannierevisites {
+  width: 100%;
+  height: 700px;
+  background-image: url(img/le-beaujolais.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #f8efdb;
 }
-.sectionBannierevisites--background{
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    text-align: center;
+.sectionBannierevisites--background {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
 }
-.sectionBannierevisites--title{
-    color: #f8efdb;
+.sectionBannierevisites--title {
+  color: #f8efdb;
 }
-.sectionBannierevisites--subtitle{
-    color: #f8efdb;
+.sectionBannierevisites--subtitle {
+  color: #f8efdb;
 }
-.sectionBannierevisites--text{
-    font-size: 20px;
+.sectionBannierevisites--text {
+  font-size: 20px;
 }
-@media (max-width:767px){
-    .sectionBannierevisites{
-        display: none;
-    }
+@media (max-width: 767px) {
+  .sectionBannierevisites {
+    display: none;
+  }
 }
 
 /* Rubrique des visites */
-.visites--background{
-    background-color: #f8efdb;
+.visites--background {
+  background-color: #f8efdb;
 }
-.visites--title{
-    padding: 50px 0;
-    color: #796d54;
-    text-align: center;
+.visites--title {
+  padding: 50px 0;
+  color: #796d54;
+  text-align: center;
 }
-.visites--position{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+.visites--position {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
-.visites--image1{
-    background-image: url(img/Chatillon-sur-chalaronne-maison-a-colombages.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 400px;
-    height: 300px;
+.visites--image1 {
+  background-image: url(img/Chatillon-sur-chalaronne-maison-a-colombages.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
 }
-.visites--image2{
-    background-image: url(img/monastere-royal-de-brou.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 400px;
-    height: 300px;
+.visites--image2 {
+  background-image: url(img/monastere-royal-de-brou.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
 }
-.visites--image3{
-    background-image: url(img/peche-dans-les-etangs-des-dombes.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 400px;
-    height: 300px;
+.visites--image3 {
+  background-image: url(img/peche-dans-les-etangs-des-dombes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
 }
 /* Séparation visites */
 
-.visites--separation{
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    color:#53462b;
-    font-size: 20px;
+.visites--separation {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  color: #53462b;
+  font-size: 20px;
 }
-.visites--image4{
-    background-image: url(img/roche-de-sollutre.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 400px;
-    height: 300px;
+.visites--image4 {
+  background-image: url(img/roche-de-sollutre.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
 }
-.visites--image5{
-    background-image: url(img/villié-morgon.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 400px;
-    height: 300px;
+.visites--image5 {
+  background-image: url(img/villié-morgon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
 }
-.visites--image6{
-    background-image: url(img/abbaye-de-cluny.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 400px;
-    height: 300px;
+.visites--image6 {
+  background-image: url(img/abbaye-de-cluny.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
 }
-.visites--image7{
-    background-image: url(img/jardin-aquatique-saint-didier-sur-chalaronne.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 400px;
-    height: 300px;
+.visites--image7 {
+  background-image: url(img/jardin-aquatique-saint-didier-sur-chalaronne.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
 }
-.visites--image8{
-    background-image: url(img/Touroparc-petits-et-grands.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 400px;
-    height: 300px;
+.visites--image8 {
+  background-image: url(img/Touroparc-petits-et-grands.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
 }
-.visites--image9{
-    background-image: url(img/coucher-de-soleil-villars-les-dombes-.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 400px;
-    height: 300px;
+.visites--image9 {
+  background-image: url(img/coucher-de-soleil-villars-les-dombes-.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
 }
 
-.visites--image_lien a{
-    text-decoration: none;
-    color: #f8efdb;
-    font-size: 20px;
+.visites--image_lien {
+  border: 1px solid #ccc;
+  text-align: center;
+  max-width: 100%;
+  padding: 15px; /* Ajout d'un espacement interne pour aérer le contenu */
+  border-radius: 5px; /* Ajout d'un arrondi aux coins pour un meilleur look */
 }
-.visites--image_lien a:hover{
+
+.visites--image_lien a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  max-width: 100%;
+}
+
+.visites--image_lien a:hover {
   color: #ec5e00;
 }
-.visites--image_lien{
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    text-align: center;
+
+.visites--image_lien p {
+  margin-top: 10px; /* Ajout d'un espace au-dessus du texte */
+  font-size: 18px; /* Taille de police pour le texte sous l'image */
 }
-@media(max-width:767px){
-    .visites--position{
-        flex-direction: column;
-    }
+
+.visites--image_lien img {
+  transition: transform 0.3s ease; /* Animation de la transformation */
+}
+
+.visites--image_lien a:hover img {
+  transform: scale(0.98); /* Zoom sur l'image au survol */
+}
+
+@media (max-width: 767px) {
+  .visites--position {
+    flex-direction: column;
+  }
+
+  .visites--image_lien {
+    padding: 10px; /* Ajustement du padding sur mobile */
+  }
+
+  .visites--image_lien p {
+    font-size: 16px; /* Réduction de la taille de police sur mobile */
+  }
 }
 /* Contact */
 
 /*sectionContact*/
 
-.sectionContact{
-    padding-top: 200px;
+.sectionContact {
+  padding-top: 200px;
 }
-.contact--box_formulaire
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    background-color: #BBA983;
+.contact--box_formulaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #bba983;
 }
-.contact--box_text{
-    padding: 50px;
+.contact--box_text {
+  padding: 50px;
 }
-.contact--box_image{
-    display: flex;
-    align-items: center;
+.contact--box_image {
+  display: flex;
+  align-items: center;
 }
-.contact--box_image img{
-    object-fit: cover;
-    width: 100%;
+.contact--box_image img {
+  object-fit: cover;
+  width: 100%;
 }
-.contact--box_labelwhite{
-    color: white;
+.contact--box_labelwhite {
+  color: white;
 }
-.contact--box{
-    background-color: rgb(248, 250, 225);
-    box-shadow: 10px 10px 5px #c5baa1;
-    border-radius: 20px;
+.contact--box {
+  background-color: rgb(248, 250, 225);
+  box-shadow: 10px 10px 5px #c5baa1;
+  border-radius: 20px;
 }
-.bouton--alert{
-    top: 100px;
+.bouton--alert {
+  top: 100px;
 }
-@media (max-width:767px){
-    .contact--box_image img{
-        display: none;
-    }
-    .contact--box{
-        box-shadow: none;
-    }
-    .sectionContact{
-        padding-top: 50px;
-    }
-}
-/* Erreur */
-label.error {
-    color: rgb(253, 0, 0);
-    font-size: 1rem;
-    display: block;
-    margin-top: 5px;
+@media (max-width: 767px) {
+  .contact--box_image img {
+    display: none;
+  }
+  .contact--box {
+    box-shadow: none;
+  }
+  .sectionContact {
+    padding-top: 50px;
+  }
 }
 
-input.error {
-    border: 1px dashed rgb(255, 0, 0);
-    font-weight: 300;
-    color: rgb(250, 0, 0);
-}
-
-[type="submit"], [type="reset"], button, html [type="button"] {
-    margin-left: 0;
-    border-radius: 0;
-    background: black;
-    color: white;
-    border: none;
-    font-weight: 300;
-    padding: 10px 0;
-    line-height: 1;
-}
 /* Mentions légales */
-.mentions{
-    padding: 150px 0 50px 0;
+.mentions {
+  padding: 150px 0 50px 0;
 }
-.mentions--titre{
-    text-align: center;
-    color: #796d54;
+.mentions--titre {
+  text-align: center;
+  color: #796d54;
 }
-.mentions--text{
-    font-size: 20px;
-    color: #796d54;
-    padding: 50px 0;
+.mentions--text {
+  font-size: 20px;
+  color: #796d54;
+  padding: 50px 0;
 }
-.mentions--soustitre{
-    color: #796d54;
+.mentions--soustitre {
+  color: #796d54;
 }
-.mentions--text a{
-    text-decoration: none;
-    color: #af4600;
+.mentions--text a {
+  text-decoration: none;
+  color: #af4600;
 }
-.mentions--text a:hover{
+.mentions--text a:hover {
   color: #ec5e00;
 }
-@media(max-width:767px){
-    .mentions{
-        padding: 50px 0 50px 0;
-    }
+@media (max-width: 767px) {
+  .mentions {
+    padding: 50px 0 50px 0;
+  }
 }
 /* Polithique de confidentialité */
 
-.polithique{
-    padding: 150px 0 50px 0;
+.polithique {
+  padding: 150px 0 50px 0;
 }
-.polithique--titre{
-    text-align: center;
-    color: #796d54;
+.polithique--titre {
+  text-align: center;
+  color: #796d54;
 }
-.polithique--text{
-    font-size: 20px;
-    color: #796d54;
-    padding: 50px 0;
+.polithique--text {
+  font-size: 20px;
+  color: #796d54;
+  padding: 50px 0;
 }
-.polithique--soustitre{
-    color: #796d54;
+.polithique--soustitre {
+  color: #796d54;
 }
-.polithique--text a{
-    text-decoration: none;
-    color: #af4600;
+.polithique--text a {
+  text-decoration: none;
+  color: #af4600;
 }
-.polithique--text a:hover{
+.polithique--text a:hover {
   color: #ec5e00;
 }
-@media(max-width:767px){
-    .polithique{
-        padding: 50px 0 50px 0;
-    }
+@media (max-width: 767px) {
+  .polithique {
+    padding: 50px 0 50px 0;
+  }
 }
