@@ -923,3 +923,10 @@ body {
   max-height: 500px;
   object-fit: cover;
 }
+.phone-link {
+  text-decoration: none;
+  color: #af4600;
+}
+.phone-link:hover {
+  color: #ec5e00;
+}
