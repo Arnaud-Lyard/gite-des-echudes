@@ -915,3 +915,11 @@ body {
     padding: 50px 0 50px 0;
   }
 }
+
+#MainCarroussel {
+  max-height: 500px;
+}
+#MainCarroussel img {
+  max-height: 500px;
+  object-fit: cover;
+}
