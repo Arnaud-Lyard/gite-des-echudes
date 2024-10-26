@@ -3,6 +3,10 @@ body {
   padding: 0;
   background-color: #e0d3b6 !important;
 }
+
+h1 {
+  color: #796d54;
+}
 /*menuNav*/
 .nav-link {
   color: #666777;
@@ -917,10 +921,10 @@ body {
 }
 
 #MainCarroussel {
-  max-height: 500px;
+  max-height: 700px;
 }
 #MainCarroussel img {
-  max-height: 500px;
+  max-height: 700px;
   object-fit: cover;
 }
 .phone-link {
