@@ -2,10 +2,42 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e0d3b6 !important;
+  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  color: #53462b;
+  /* Sticky footer : la page occupe au moins toute la hauteur, le footer file en bas */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+.navbar-brand {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  letter-spacing: 0.2px;
 }
 
 h1 {
   color: #796d54;
+}
+
+/* Lisibilité des paragraphes longs */
+.sectionService--text_paragraphe,
+.sectionDiscovery--text,
+.sectionProximity--text,
+.mentions--text,
+.polithique--text,
+.situation--text,
+.loisir--text {
+  hyphens: auto;
 }
 /*menuNav*/
 .nav-link {
@@ -109,7 +141,13 @@ h1 {
   height: 400px;
   object-fit: cover;
   border: 3px solid white;
-  border-radius: 10px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(89, 74, 42, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sectionService--image img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(89, 74, 42, 0.25);
 }
 .sectionService--position {
   width: 100%;
@@ -137,28 +175,34 @@ h1 {
     height: 200px;
   }
 }
-/* Propriété */
-.sectionProperty {
+/* Votre hôte */
+.sectionHost {
   width: 100%;
-  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   background-color: #bba983;
+  padding: 70px 20px;
 }
-.sectionProperty--image img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
+.sectionHost--inner {
+  max-width: 760px;
 }
-.sectionProperty--title {
+.sectionHost--eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 700;
   color: #6d5b33;
 }
-.sectionProperty--text {
+.sectionHost--title {
+  color: #5b4a2a;
+  margin-top: 6px;
+}
+.sectionHost--text {
   color: #53462b;
   font-size: 20px;
+  margin-top: 10px;
 }
 
 /* Découverte */
@@ -320,17 +364,12 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
-    url(img/Musique-accordeon-saint-etienne-sur-chalaronne.jpg);
-  background-attachment: fixed;
+  background-image: linear-gradient(135deg, #796d54 0%, #bba983 100%);
   background-position: center;
   background-size: cover;
-  height: 500px;
+  min-height: 360px;
   width: 100%;
+  padding: 60px 0;
 }
 .separation--title {
   text-align: center;
@@ -438,14 +477,18 @@ h1 {
 /* Situation */
 .situation {
   background-color: #fff;
-  height: 500px;
+  min-height: 500px;
   display: flex;
   align-items: center;
+  padding: 60px 0;
 }
 .situation--image img {
   width: 100%;
   height: 400px;
   object-fit: contain;
+}
+.situation--map {
+  margin-top: 30px;
 }
 .situation--text {
   text-align: justify;
@@ -558,22 +601,37 @@ h1 {
   fill: #333;
 }
 .tarif--reservation {
-  background-color: #333;
+  background-color: #af4600;
   border: 1px solid #af4600;
-  border-radius: 20px;
+  border-radius: 30px;
+  margin-top: 25px;
+  transition: background-color 0.25s ease, transform 0.25s ease,
+    box-shadow 0.25s ease;
+  box-shadow: 0 6px 16px rgba(175, 70, 0, 0.3);
 }
 .tarif--reservation:hover {
-  background-color: #bba983;
-  border: 1px solid #af4600;
+  background-color: #ec5e00;
+  border: 1px solid #ec5e00;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(175, 70, 0, 0.4);
 }
 .tarif--reservation a {
-  font-size: 25px;
-  color: #f8efdb;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
   text-decoration: none;
-  padding: 30px;
+  padding: 16px 40px;
+  display: inline-block;
 }
 .tarif--reservation a:hover {
-  color: #af4600;
+  color: #fff;
+}
+.tarifs--couleur {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tarifs--couleur:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(89, 74, 42, 0.2);
 }
 .tarifs--prix__paragraphe {
   padding: 10px;
@@ -933,4 +991,91 @@ h1 {
 }
 .phone-link:hover {
   color: #ec5e00;
+}
+
+/* Bouton téléphone flottant (toutes les pages) */
+.call-fab {
+  position: fixed;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #af4600;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(175, 70, 0, 0.4);
+  font-weight: 700;
+  font-size: 18px;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+.call-fab:hover {
+  background-color: #ec5e00;
+  color: #fff;
+  transform: translateY(-50%) scale(1.05);
+}
+.call-fab svg {
+  width: 22px;
+  height: 22px;
+  fill: #fff;
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .call-fab {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+    transform: none;
+    padding: 16px;
+    border-radius: 50%;
+  }
+  .call-fab:hover {
+    transform: scale(1.05);
+  }
+  .call-fab .call-fab--label {
+    display: none;
+  }
+}
+
+/* Carte Google Maps intégrée (page Situation) */
+.map-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(89, 74, 42, 0.18);
+  border: 3px solid #fff;
+}
+.map-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Lisibilité : largeur de lecture confortable */
+.sectionDiscovery--text p,
+.mentions--text p,
+.polithique--text p {
+  max-width: 70ch;
+}
+.visites--separation p {
+  max-width: 70ch;
+  margin: 0 auto;
+}
+
+/* Cartes visites : ombre + survol cohérents */
+.visites--image_lien {
+  box-shadow: 0 8px 20px rgba(89, 74, 42, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.visites--image_lien:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(89, 74, 42, 0.22);
 }
